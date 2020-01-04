@@ -5,5 +5,7 @@ then
   echo "Elixir Mix Release"
   exit 0
 else
+  echo "Releases not supported!"
+  echo "$1/rel directory does not exist"
   exit 1
 fi
