@@ -20,5 +20,7 @@ function export_env_vars() {
       export "$e=$(cat $env_path/$e)"
       :
     done
+  else
+    echo "no env path"
   fi
 }
