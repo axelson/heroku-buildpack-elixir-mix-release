@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Elixir Mix Release"
+echo "Elixir Mix Release $1 AAA $2"
 exit 0
