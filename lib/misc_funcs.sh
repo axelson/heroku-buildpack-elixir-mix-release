@@ -10,6 +10,7 @@ function output_section() {
 }
 
 function export_env_vars() {
+  echo "In function to export env vars"
   whitelist_regex=${2:-''}
   blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
   if [ -d "$env_path" ]; then
