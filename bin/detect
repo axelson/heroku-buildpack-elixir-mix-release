@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Elixir Mix Release detect script running"
-
-if [ -d "$1/rel" ];
-then
-  echo "Elixir Mix Release"
-  exit 0
-else
-  echo "Releases not supported!"
-  echo "$1/rel directory does not exist"
-  exit 1
-fi
+echo "Elixir Mix Release"
+exit 0
