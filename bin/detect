@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Elixir Mix Release $1 AAA $2"
-exit 0
+mix_file_url="$1/mix.exs"
+
+if [ -f $mix_file_url ];
+then
+  echo "Elixir Mix Release"
+  exit 0
+else
+  exit 1
+fi
