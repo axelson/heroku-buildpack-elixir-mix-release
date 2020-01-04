@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Elixir Mix Release script compile running"
+
 build_path=$(cd $1 && pwd)
 
 cd $build_path

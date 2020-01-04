@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Elixir Mix Release detect script running"
+
 if [ -d "$1/rel" ];
 then
   echo "Elixir Mix Release"
