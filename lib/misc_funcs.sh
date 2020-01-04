@@ -1,3 +1,14 @@
+# Outputs section heading
+#
+# Usage:
+#
+#     output_section "Application tasks"
+#
+function output_section() {
+  local indentation="----->"
+  echo "${indentation} $1"
+}
+
 function export_env_vars() {
   whitelist_regex=${2:-''}
   blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
